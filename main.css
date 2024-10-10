@@ -1,0 +1,26 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --header-bg: #FFFFFF;
+  --main-bg: #ffffffad;
+  --filters-bg: #1c1c1c27;
+  --title-text: #424242;
+}
+
+
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+@media (max-width: 360px) {
+
+
+}
