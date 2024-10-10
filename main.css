@@ -47,6 +47,66 @@ header .urls__wrapper .header--url {
   cursor: pointer;
 }
 
+/* BREADCRUMBS */
+.breadcrumbs__wrapper{
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+  color: #424242;
+}
+
+/*FIRST COLUMN*/
+.first_column{
+  margin-top: 32px;
+}
+/* QUEST WRAPPER */
+.quest__wrapper{
+ display: flex;
+ background-color: var(--header-bg);
+ justify-content: space-between;
+ width: 831px;
+ height: 361px;
+ border-radius: 10px;
+ position: relative;
+}
+.quest__image{
+  position: absolute;
+  right: 0;
+}
+.quest__wrapper--descr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 32px 24px;
+  width: 500px;
+  z-index: 1;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+  h1{
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--title-text);
+  }
+  .quest__wrapper--descr_text{
+    width: 321px;
+  }
+}
+.quest__descr--filters{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 6px;
+  p{
+    color: #383838;
+    font-weight: 600;
+    background-color: #1c1c1c09;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+
 @media (max-width: 360px) {
 
 
