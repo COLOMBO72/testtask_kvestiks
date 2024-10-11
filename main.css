@@ -151,8 +151,8 @@ header .urls__wrapper .header--url {
   gap: 24px;
   scrollbar-width:auto;
   scrollbar-color: #A8A8A8 #DDDDDD;
+  padding-bottom: 16px;
 }
-
 
 .review__card{
   display: flex;
@@ -190,6 +190,21 @@ header .urls__wrapper .header--url {
   }
 }
 
+.reviews__wrapper--button{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.reviews__wrapper button{
+  padding: 16px 129px;
+  background-color: var(--orange-text);
+  border-radius: 10px;
+  margin: 24px 0px;
+  color: var(--header-bg);
+}
+
 
 /* SECOND COLUMN */
 .second_column{
@@ -210,9 +225,11 @@ header .urls__wrapper .header--url {
     margin-bottom: 8px;
   }
 }
+
 .second_column--howtopay{
   text-align: center;
 }
+
 .second_column .pay__variants{
   display: flex;
   gap: 18px;
