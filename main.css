@@ -70,8 +70,8 @@ header .urls__wrapper .header--url {
  display: flex;
  background-color: var(--header-bg);
  justify-content: space-between;
- width: 831px;
- height: 361px;
+ max-width: 831px;
+ min-height: 361px;
  border-radius: 10px;
  position: relative;
 }
@@ -95,23 +95,23 @@ header .urls__wrapper .header--url {
   flex-direction: column;
   justify-content: space-around;
   padding: 32px 24px;
-  width: 500px;
+  max-width: 500px;
   z-index: 1;
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%);
   h1{
     font-weight: bold;
     font-size: 36px;
     color: var(--title-text);
   }
   .quest__wrapper--descr_text{
-    width: 321px;
+    max-width: 321px;
   }
 }
 .quest__descr--filters{
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  max-width: 300px;
   gap: 6px;
   p{
     color: #383838;
@@ -122,11 +122,79 @@ header .urls__wrapper .header--url {
     cursor: pointer;
   }
 }
+/* FIRST COLUMN REVIEWS */
+.reviews__wrapper{
+  margin-top: 48px;
+  max-width: 831px;
+}
+.reviews__wrapper--title{
+  color: var(--title-text);
+  position: relative;
+  max-width: 350px;
+  margin-bottom: 24px;
+  h1{
+    font-weight: bold;
+    font-size: 34px;
+  }
+  p{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+  }
+}
+
+.reviews__slider{
+  display: flex;
+  max-width: 861px;
+  margin: 0 auto;
+  overflow: auto;
+  gap: 24px;
+  scrollbar-width:auto;
+  scrollbar-color: #A8A8A8 #DDDDDD;
+}
+
+
+.review__card{
+  display: flex;
+  max-width: 261px;
+  flex: 1 0 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 24px;
+  p{
+    font-size: 13px;
+    color: #868686;
+    margin-bottom: 16px;
+  }
+  h1{
+    font-weight: 600;
+    font-size: 14px;
+    color: #383838;
+    margin-bottom: 6px;
+  }
+  h2{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+}
+.review__card .review__stars{
+  display: flex;
+  gap: 8px;
+  img{
+    width: 12px;
+  }
+}
+
 
 /* SECOND COLUMN */
 .second_column{
-  width: 261px;
-  height: 230px;
+  max-width: 261px;
+  max-height: 230px;
   border-radius: 10px;
   background-color: var(--header-bg);
   box-shadow: 0px 0px 5px -2px rgba(34, 60, 80, 0.2);
